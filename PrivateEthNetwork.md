@@ -1,43 +1,43 @@
 1. Preparation:
-	# git clone https://github.com/ethereum/go-ethereum.git
-	# cd  go-ethereum
-	# git checkout v1.7.2
-	# sudo apt-get install -y build-essential
-	# sudo -E add-apt-repository ppa:gophers/archive
-	# sudo apt-get update
-	# sudo apt-get install golang-1.7
+	$ git clone https://github.com/ethereum/go-ethereum.git
+	$ cd  go-ethereum
+	$ git checkout v1.7.2
+	$ sudo apt-get install -y build-essential
+	$ sudo -E add-apt-repository ppa:gophers/archive
+	$ sudo apt-get update
+	$ sudo apt-get install golang-1.7
 	Add 
 		export GOROOT=/usr/lib/go-1.7
 		export PATH=$GOROOT/bin:$PATH
 	to ./bashrc
-	# source ~/.bashrc
-	# make geth
-	# make all
+	$ source ~/.bashrc
+	$ make geth
+	$ make all
 
 	Add geth binary path for example
 		export PATH=/home/upsquared/go-ethereum/build/bin:$PATH
 	to ./bashrc
-	# source ~/.bashrc
+	$ source ~/.bashrc
 
 2 Create Nodes.
-	# mkdir node1 node2 node3 node4
-	# geth --datadir node1/ account new
+	$ mkdir node1 node2 node3 node4
+	$ geth --datadir node1/ account new
 		Address: {9be7181ec8625a10d85be1b71297c311502ce0e5}
-	# geth --datadir node2/ account new
+	$ geth --datadir node2/ account new
 		Address: {9bf98906b2817876f02a738b9d8da55bd24aaf5c}
-	# geth --datadir node3/ account new
+	$ geth --datadir node3/ account new
 		Address: {e388a32676bd0cdd72b17751a9fa905ebc96e04b}
-	# geth --datadir node4/ account new
+	$ geth --datadir node4/ account new
 		Address: {32f74737e3b333b9733f00cc030db1cd4cea9db4}
-	# echo '9be7181ec8625a10d85be1b71297c311502ce0e5' >> accounts.txt
-	# echo '9bf98906b2817876f02a738b9d8da55bd24aaf5c' >> accounts.txt
-	# echo 'e388a32676bd0cdd72b17751a9fa905ebc96e04b' >> accounts.txt
-	# echo '32f74737e3b333b9733f00cc030db1cd4cea9db4' >> accounts.txt
-	# echo 'intel123' > node1/password.txt
-	# echo 'intel123' > node2/password.txt
-	# echo 'intel123' > node3/password.txt
-	# echo 'intel123' > node4/password.txt
-	# puppeth
+	$ echo '9be7181ec8625a10d85be1b71297c311502ce0e5' >> accounts.txt
+	$ echo '9bf98906b2817876f02a738b9d8da55bd24aaf5c' >> accounts.txt
+	$ echo 'e388a32676bd0cdd72b17751a9fa905ebc96e04b' >> accounts.txt
+	$ echo '32f74737e3b333b9733f00cc030db1cd4cea9db4' >> accounts.txt
+	$ echo 'intel123' > node1/password.txt
+	$ echo 'intel123' > node2/password.txt
+	$ echo 'intel123' > node3/password.txt
+	$ echo 'intel123' > node4/password.txt
+	$ puppeth
 		Please specify a network name to administer (no spaces, please)
 		> devnet
 		What would you like to do? (default = stats)

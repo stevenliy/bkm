@@ -20,109 +20,110 @@
 	$ source ~/.bashrc
 
 2 Create Nodes.
-	$ mkdir node1 node2 node3 node4
-	$ geth --datadir node1/ account new
-		Address: {9be7181ec8625a10d85be1b71297c311502ce0e5}
-	$ geth --datadir node2/ account new
-		Address: {9bf98906b2817876f02a738b9d8da55bd24aaf5c}
-	$ geth --datadir node3/ account new
-		Address: {e388a32676bd0cdd72b17751a9fa905ebc96e04b}
-	$ geth --datadir node4/ account new
-		Address: {32f74737e3b333b9733f00cc030db1cd4cea9db4}
-	$ echo '9be7181ec8625a10d85be1b71297c311502ce0e5' >> accounts.txt
-	$ echo '9bf98906b2817876f02a738b9d8da55bd24aaf5c' >> accounts.txt
-	$ echo 'e388a32676bd0cdd72b17751a9fa905ebc96e04b' >> accounts.txt
-	$ echo '32f74737e3b333b9733f00cc030db1cd4cea9db4' >> accounts.txt
-	$ echo 'intel123' > node1/password.txt
-	$ echo 'intel123' > node2/password.txt
-	$ echo 'intel123' > node3/password.txt
-	$ echo 'intel123' > node4/password.txt
-	$ puppeth
-		Please specify a network name to administer (no spaces, please)
-		> devnet
-		What would you like to do? (default = stats)
-		1. Show network stats
-		2. Configure new genesis
-		3. Track new remote server
-		4. Deploy network components
-		> 2
 
-		Which consensus engine to use? (default = clique)
-		 1. Ethash - proof-of-work
-		 2. Clique - proof-of-authority
-		> 2
+		$ mkdir node1 node2 node3 node4
+		$ geth --datadir node1/ account new
+			Address: {9be7181ec8625a10d85be1b71297c311502ce0e5}
+		$ geth --datadir node2/ account new
+			Address: {9bf98906b2817876f02a738b9d8da55bd24aaf5c}
+		$ geth --datadir node3/ account new
+			Address: {e388a32676bd0cdd72b17751a9fa905ebc96e04b}
+		$ geth --datadir node4/ account new
+			Address: {32f74737e3b333b9733f00cc030db1cd4cea9db4}
+		$ echo '9be7181ec8625a10d85be1b71297c311502ce0e5' >> accounts.txt
+		$ echo '9bf98906b2817876f02a738b9d8da55bd24aaf5c' >> accounts.txt
+		$ echo 'e388a32676bd0cdd72b17751a9fa905ebc96e04b' >> accounts.txt
+		$ echo '32f74737e3b333b9733f00cc030db1cd4cea9db4' >> accounts.txt
+		$ echo 'intel123' > node1/password.txt
+		$ echo 'intel123' > node2/password.txt
+		$ echo 'intel123' > node3/password.txt
+		$ echo 'intel123' > node4/password.txt
+		$ puppeth
+			Please specify a network name to administer (no spaces, please)
+			> devnet
+			What would you like to do? (default = stats)
+			1. Show network stats
+			2. Configure new genesis
+			3. Track new remote server
+			4. Deploy network components
+			> 2
 
-		How many seconds should blocks take? (default = 15)
-		> 5 // for example
+			Which consensus engine to use? (default = clique)
+			 1. Ethash - proof-of-work
+			 2. Clique - proof-of-authority
+			> 2
 
-		Which accounts are allowed to seal? (mandatory at least one)
-		> 0x9be7181ec8625a10d85be1b71297c311502ce0e5 //First three nodes are sealers
-		> 0x9bf98906b2817876f02a738b9d8da55bd24aaf5c
-		> 0xe388a32676bd0cdd72b17751a9fa905ebc96e04b
+			How many seconds should blocks take? (default = 15)
+			> 5 // for example
 
-		Which accounts should be pre-funded? (advisable at least one)
-		> 0x9be7181ec8625a10d85be1b71297c311502ce0e5 // All pre-defined accounts with fund !
-		> 0x9bf98906b2817876f02a738b9d8da55bd24aaf5c
-		> 0xe388a32676bd0cdd72b17751a9fa905ebc96e04b
-		> 0x32f74737e3b333b9733f00cc030db1cd4cea9db4
+			Which accounts are allowed to seal? (mandatory at least one)
+			> 0x9be7181ec8625a10d85be1b71297c311502ce0e5 //First three nodes are sealers
+			> 0x9bf98906b2817876f02a738b9d8da55bd24aaf5c
+			> 0xe388a32676bd0cdd72b17751a9fa905ebc96e04b
 
-		Specify your chain/network ID if you want an explicit one (default = random)
-		> 1515 // for example. Do not use anything from 1 to 10
+			Which accounts should be pre-funded? (advisable at least one)
+			> 0x9be7181ec8625a10d85be1b71297c311502ce0e5 // All pre-defined accounts with fund !
+			> 0x9bf98906b2817876f02a738b9d8da55bd24aaf5c
+			> 0xe388a32676bd0cdd72b17751a9fa905ebc96e04b
+			> 0x32f74737e3b333b9733f00cc030db1cd4cea9db4
 
-		Anything fun to embed into the genesis block? (max 32 bytes)
-		>
+			Specify your chain/network ID if you want an explicit one (default = random)
+			> 1515 // for example. Do not use anything from 1 to 10
 
-		What would you like to do? (default = stats)
-		 1. Show network stats
-		 2. Manage existing genesis
-		 3. Track new remote server
-		 4. Deploy network components
-		 > 2
+			Anything fun to embed into the genesis block? (max 32 bytes)
+			>
 
-		 1. Modify existing fork rules
-		 2. Export genesis configuration
-		 > 2
+			What would you like to do? (default = stats)
+			 1. Show network stats
+			 2. Manage existing genesis
+			 3. Track new remote server
+			 4. Deploy network components
+			 > 2
 
-		Which file to save the genesis into? (default = devnet.json)
-		> genesis.json
-		INFO [01-23|15:16:17] Exported existing genesis block
+			 1. Modify existing fork rules
+			 2. Export genesis configuration
+			 > 2
 
-		What would you like to do? (default = stats)
-		 1. Show network stats
-		 2. Manage existing genesis
-		 3. Track new remote server
-		 4. Deploy network components
-		 > ^C // ctrl+C to quit puppeth
+			Which file to save the genesis into? (default = devnet.json)
+			> genesis.json
+			INFO [01-23|15:16:17] Exported existing genesis block
 
-		Update the genesis.json
-		 - Cleane the empty addresses that puppeth includes when creating the file
-		 - Change the gasLimit
+			What would you like to do? (default = stats)
+			 1. Show network stats
+			 2. Manage existing genesis
+			 3. Track new remote server
+			 4. Deploy network components
+			 > ^C // ctrl+C to quit puppeth
+
+			Update the genesis.json
+			 - Cleane the empty addresses that puppeth includes when creating the file
+			 - Change the gasLimit
 
 
-		 > geth --datadir node1/ init genesis.json
-		 > geth --datadir node2/ init genesis.json
-		 > geth --datadir node3/ init genesis.json
-		 > geth --datadir node4/ init genesis.json
+		$ geth --datadir node1/ init genesis.json
+		$ geth --datadir node2/ init genesis.json
+		$ geth --datadir node3/ init genesis.json
+		$ geth --datadir node4/ init genesis.json
 
-		 > bootnode -genkey boot.key
-		 > bootnode -nodekey boot.key -verbosity 9 -addr :30310
+		$ bootnode -genkey boot.key
+		$ bootnode -nodekey boot.key -verbosity 9 -addr :30310
 
-		 > geth --mine -networkid 1515 --datadir node1/ --unlock 0 --password node1/password.txt --syncmode 'full' --port 30311 --rpc --rpccorsdomain "*" --rpcaddr 10.239.67.178 --rpcport 8545 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://cd9054839921ff2bf736e83e3c4b43eb84fcdab9d57ff4fd9c7cbe6efd1470702396f7a083a590ed9bff2429d5e4a1843541de0d7b54e90f98d72b8133d3e1a7@10.239.67.178:30310' console
-		 > geth --mine -networkid 1515 --datadir node2/ --unlock 0 --password node2/password.txt --syncmode 'full' --port 30312 --rpc --rpccorsdomain "*" --rpcaddr 10.239.67.178 --rpcport 8546 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://cd9054839921ff2bf736e83e3c4b43eb84fcdab9d57ff4fd9c7cbe6efd1470702396f7a083a590ed9bff2429d5e4a1843541de0d7b54e90f98d72b8133d3e1a7@10.239.67.178:30310' console
-		 > geth --mine -networkid 1515 --datadir node3/ --unlock 0 --password node3/password.txt --syncmode 'full' --port 30313 --rpc --rpccorsdomain "*" --rpcaddr 10.239.67.178 --rpcport 8547 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://cd9054839921ff2bf736e83e3c4b43eb84fcdab9d57ff4fd9c7cbe6efd1470702396f7a083a590ed9bff2429d5e4a1843541de0d7b54e90f98d72b8133d3e1a7@10.239.67.178:30310' console
-		 > geth --mine -networkid 1515 --datadir node4/ --unlock 0 --password node4/password.txt --syncmode 'full' --port 30314 --rpc --rpccorsdomain "*" --rpcaddr 10.239.67.178 --rpcport 8548 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://cd9054839921ff2bf736e83e3c4b43eb84fcdab9d57ff4fd9c7cbe6efd1470702396f7a083a590ed9bff2429d5e4a1843541de0d7b54e90f98d72b8133d3e1a7@10.239.67.178:30310' console
+		$ geth --mine -networkid 1515 --datadir node1/ --unlock 0 --password node1/password.txt --syncmode 'full' --port 30311 --rpc --rpccorsdomain "*" --rpcaddr 10.239.67.178 --rpcport 8545 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://cd9054839921ff2bf736e83e3c4b43eb84fcdab9d57ff4fd9c7cbe6efd1470702396f7a083a590ed9bff2429d5e4a1843541de0d7b54e90f98d72b8133d3e1a7@10.239.67.178:30310' console
+		$ geth --mine -networkid 1515 --datadir node2/ --unlock 0 --password node2/password.txt --syncmode 'full' --port 30312 --rpc --rpccorsdomain "*" --rpcaddr 10.239.67.178 --rpcport 8546 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://cd9054839921ff2bf736e83e3c4b43eb84fcdab9d57ff4fd9c7cbe6efd1470702396f7a083a590ed9bff2429d5e4a1843541de0d7b54e90f98d72b8133d3e1a7@10.239.67.178:30310' console
+		$ geth --mine -networkid 1515 --datadir node3/ --unlock 0 --password node3/password.txt --syncmode 'full' --port 30313 --rpc --rpccorsdomain "*" --rpcaddr 10.239.67.178 --rpcport 8547 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://cd9054839921ff2bf736e83e3c4b43eb84fcdab9d57ff4fd9c7cbe6efd1470702396f7a083a590ed9bff2429d5e4a1843541de0d7b54e90f98d72b8133d3e1a7@10.239.67.178:30310' console
+		$ geth --mine -networkid 1515 --datadir node4/ --unlock 0 --password node4/password.txt --syncmode 'full' --port 30314 --rpc --rpccorsdomain "*" --rpcaddr 10.239.67.178 --rpcport 8548 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://cd9054839921ff2bf736e83e3c4b43eb84fcdab9d57ff4fd9c7cbe6efd1470702396f7a083a590ed9bff2429d5e4a1843541de0d7b54e90f98d72b8133d3e1a7@10.239.67.178:30310' console
 
-		 > net.peerCount
+		$ net.peerCount
 
 3. Connect MetaMask Ethereum Wallet
 	
-	Set the proxy to the chrome browser, https://metamask.io/
-	Then click the MetaMask on the right top of the browser tool bar
+		Set the proxy to the chrome browser, https://metamask.io/
+		Then click the MetaMask on the right top of the browser tool bar
 
 4. Create MetaMask account
 	
-	My: sugar game quality theme food tortoise twice surprise popular liquid design matrix
-	My address: 0xac05BE8800cfb366661cCEEC2400fedD091981bb
+		My: sugar game quality theme food tortoise twice surprise popular liquid design matrix
+		My address: 0xac05BE8800cfb366661cCEEC2400fedD091981bb
 
 5. Create "New Custom RPC" to http://10.239.67.178:8548
 

@@ -1,3 +1,26 @@
+1. Preparation:
+
+ # git clone https://github.com/ethereum/go-ethereum.git
+ # cd  go-ethereum
+ # git checkout v1.7.2
+ # sudo apt-get install -y build-essential
+ # sudo -E add-apt-repository ppa:gophers/archive
+ # sudo apt-get update
+ # sudo apt-get install golang-1.7
+ Add 
+   export GOROOT=/usr/lib/go-1.7
+   export PATH=$GOROOT/bin:$PATH
+ to ./bashrc
+ # source ~/.bashrc
+ # make geth
+ # make all
+
+ Add geth binary path for example
+   export PATH=/home/upsquared/go-ethereum/build/bin:$PATH
+ to ./bashrc
+ # source ~/.bashrc
+
+2.
 # mkdir node1 node2 node3 node4
 # geth --datadir node1/ account new
   Address: {9be7181ec8625a10d85be1b71297c311502ce0e5}

@@ -20,7 +20,7 @@
 		to ./bashrc
 		$ source ~/.bashrc
 
-2 Create Nodes.
+2 Create Nodes:
 
 		$ mkdir node1 node2 node3 node4
 		$ geth --datadir node1/ account new
@@ -99,7 +99,6 @@
 			Update the genesis.json
 			 - Cleane the empty addresses that puppeth includes when creating the file
 			 - Change the gasLimit
-
 
 		$ geth --datadir node1/ init genesis.json
 		$ geth --datadir node2/ init genesis.json

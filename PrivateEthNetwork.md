@@ -172,6 +172,7 @@
 	nce done with the setGreeting method, you can invoke other methods too.
 
 9. Ethereum Block Explorer
+
 		$ git clone https://github.com/carsenk/explorer
 		$ npm install
 		change the localhost to 10.239.67.178 in package.json 

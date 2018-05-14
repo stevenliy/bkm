@@ -136,31 +136,31 @@
 	Open the http://remix.ethereum.org  <== make sure not https
 
 	pragma solidity ^0.4.11;
-	contract Hello  {
-		  // a string variable
-		  string public greeting;
+		contract Hello  {
+			// a string variable
+			string public greeting;
 
-		// the function with the same name as the class is a constructor
-		 function Hello(string _greeting) {
-			 greeting = _greeting;
-		 }
-	 
-		 // change the greeting message
-		 function setGreeting(string _greeting) {
-			 greeting = _greeting;
-		 }
-	 
-		 // get the greeting message
-		 function greet() constant returns (string _greeting) {
-			_greeting = greeting;
-		 }
-	 }
+			// the function with the same name as the class is a constructor
+			 function Hello(string _greeting) {
+				 greeting = _greeting;
+			 }
+		 
+			 // change the greeting message
+			 function setGreeting(string _greeting) {
+				 greeting = _greeting;
+			 }
+		 
+			 // get the greeting message
+			 function greet() constant returns (string _greeting) {
+				_greeting = greeting;
+			 }
+		}
 
 	Compile
 	Run -> Environment -> Web3 Provider -> 10.239.67.178:8548 
 
-	> geth --datadir node4/ attach ipc:node4/geth.ipc
-	> personal.unlockAccount(eth.accounts[0],"intel123")
+		$ geth --datadir node4/ attach ipc:node4/geth.ipc
+		$ personal.unlockAccount(eth.accounts[0],"intel123")
 
 	Finally Create the contract from http://remix.ethereum.org
 

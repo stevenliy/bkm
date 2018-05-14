@@ -172,17 +172,17 @@
 	nce done with the setGreeting method, you can invoke other methods too.
 
 9. Ethereum Block Explorer
-	> git clone https://github.com/carsenk/explorer
-	> npm install
-	change the localhost to 10.239.67.178 in package.json 
-	change the localhost to 10.239.67.178 in app/app.js
-	> npm start
-	OR
-	> git clone https://github.com/etherparty/explorer
-	> npm install
-	change the localhost to 10.239.67.178 in package.json 
-	change the localhost to 10.239.67.178 in app/app.js
-	> npm start
+		$ git clone https://github.com/carsenk/explorer
+		$ npm install
+		change the localhost to 10.239.67.178 in package.json 
+		change the localhost to 10.239.67.178 in app/app.js
+		$ npm start
+		OR
+		$ git clone https://github.com/etherparty/explorer
+		$ npm install
+		change the localhost to 10.239.67.178 in package.json 
+		change the localhost to 10.239.67.178 in app/app.js
+		$ npm start
 
 10. Reference
 	https://webcache.googleusercontent.com/search?q=cache:ofb_VWXtlk4J:https://hackernoon.com/setup-your-own-private-proof-of-authority-ethereum-network-with-geth-9a0a3750cda8+&cd=5&hl=zh-CN&ct=clnk&gl=us

@@ -115,19 +115,22 @@
 		 > net.peerCount
 
 3. Connect MetaMask Ethereum Wallet
+	
 	Set the proxy to the chrome browser, https://metamask.io/
 	Then click the MetaMask on the right top of the browser tool bar
 
 4. Create MetaMask account
+	
 	My: sugar game quality theme food tortoise twice surprise popular liquid design matrix
 	My address: 0xac05BE8800cfb366661cCEEC2400fedD091981bb
 
 5. Create "New Custom RPC" to http://10.239.67.178:8548
 
 6. Transfer Ether
-	> geth --datadir node4/ attach ipc:node4/geth.ipc
-	> personal.unlockAccount(eth.accounts[0],"intel123")
-	> eth.sendTransaction({from:eth.accounts[0], to:"0xac05BE8800cfb366661cCEEC2400fedD091981bb", value:web3.toWei(1, "ether")})
+
+		$ geth --datadir node4/ attach ipc:node4/geth.ipc
+		$ personal.unlockAccount(eth.accounts[0],"intel123")
+		$ eth.sendTransaction({from:eth.accounts[0], to:"0xac05BE8800cfb366661cCEEC2400fedD091981bb", value:web3.toWei(1, "ether")})
 
 7. View Account Balance In MetaMask
 	You should see the eth in the MetaMask
@@ -135,26 +138,26 @@
 8. Remex Solidity Editor
 	Open the http://remix.ethereum.org  <== make sure not https
 
-	pragma solidity ^0.4.11;
-		contract Hello  {
-			// a string variable
-			string public greeting;
+		pragma solidity ^0.4.11;
+			contract Hello  {
+				// a string variable
+				string public greeting;
 
-			// the function with the same name as the class is a constructor
-			 function Hello(string _greeting) {
-				 greeting = _greeting;
-			 }
-		 
-			 // change the greeting message
-			 function setGreeting(string _greeting) {
-				 greeting = _greeting;
-			 }
-		 
-			 // get the greeting message
-			 function greet() constant returns (string _greeting) {
-				_greeting = greeting;
-			 }
-		}
+				// the function with the same name as the class is a constructor
+				 function Hello(string _greeting) {
+					 greeting = _greeting;
+				 }
+			 
+				 // change the greeting message
+				 function setGreeting(string _greeting) {
+					 greeting = _greeting;
+				 }
+			 
+				 // get the greeting message
+				 function greet() constant returns (string _greeting) {
+					_greeting = greeting;
+				 }
+			}
 
 	Compile
 	Run -> Environment -> Web3 Provider -> 10.239.67.178:8548 

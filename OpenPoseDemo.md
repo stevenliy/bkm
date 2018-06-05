@@ -11,9 +11,9 @@
 
 
     # git clone https://github.com/ildoonet/tf-pose-estimation
-    # cd src
+    # cd tf-openpose/src
     ...
-    # python run_webcam.py --model=mobilenet_thin --resize=432x368 --camera=0
+    # python run_webcam.py --model=mobilenet_thin --resolution=432x368 --camera=0
 
     Refs:
       https://ncsforum.movidius.com/discussion/224/nan-result-error-after-huge-network-was-used

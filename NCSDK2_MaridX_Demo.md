@@ -28,11 +28,19 @@
     # cd -
     # make all
     # make pycaffe
-    #　sudo apt-get install python3-pip
+    # sudo apt-get install python3-pip
     # pip3 install numpy
     # pip3 install networkx
-
-    # cd opencv/build
+    
+    Install OpenCV version 3.4.1.
+    # git clone https://github.com/opencv/opencv_contrib.git
+    # cd opencv_contrib
+    # git checkout ced5aa760688dd2ec867ebf7bd4f0c2341d2fde5
+    # cd ../
+    # git clone https://github.com/opencv/opencv.git
+    # cd opencv
+    # git checkout 2fb4812f6dfb9eac536c4975af18eb94da003366
+    # mkdir build && cd build
     # cmake -DWITH_VA_INTEL=ON -DWITH_OPENGL=ON -DINSTALL_PYTHON_EXAMPLES=ON -DBUILD_NEW_PYTHON_SUPPORT=ON -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules -DWITH_CUDA=OFF ..
     # make -j10
     # sudo make install

@@ -14,8 +14,7 @@
     # cd tf-openpose/src
     ...
     # python run_webcam.py --model=mobilenet_thin --resolution=432x368 --camera=0
-    ![alt text](https://github.com/stevenliy/bkm/blob/master/headpose.png)
-
     Refs:
       https://ncsforum.movidius.com/discussion/224/nan-result-error-after-huge-network-was-used
       https://antkillerfarm.github.io/dl/2018/01/30/Deep_Learning_35.html
+   ![Alt text](headpose.png?raw=true "My Pose")
